@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 10px;
+        }
+        body{
+            background-color: aquamarine;
+        }
+        .container{
+            background-color: rgb(23 215 131);
+            border: 4px solid rgb(40, 2, 56);
+            /* we can set padding for top bottom left and right */
+            /* padding-top: 100px;
+            padding-right: 100px; */
+            /* margin: 23px;
+            margin-bottom: 10px;
+            margin-left: 100px ;
+            margin-right: 20px ; */
+            /* padding:0px 1px 2px 78px; padding/margin=top right botttom left ; */
+            /* padding:5px 100px;padding:y(top/bottom) x(left/right); */
+            padding:34px 19px;
+            margin: 40px 10px;
+            border-radius: 5px ;
+            width: 250px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+     <h3>This is my heading</h3>
+     <p id="first">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi veritatis rerum magnam, quam accusamus necessitatibus itaque. Sequi eligendi ex blanditiis tenetur enim repellendus?</p>
+    </div> 
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="second">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi veritatis rerum magnam, quam accusamus necessitatibus itaque. Sequi eligendi ex blanditiis tenetur enim repellendus?</p>
+       </div> 
+       <div class="container">
+        <h3>This is my heading</h3>
+        <p id="third">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi veritatis rerum magnam, quam accusamus necessitatibus itaque. Sequi eligendi ex blanditiis tenetur enim repellendus?</p>
+       </div> 
+</body>
+</html>
