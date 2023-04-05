@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and after pseudo selector</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+            background-color: black;
+            color: white;
+           
+        }
+        header::before{
+            background: url('https://source.unsplash.com/collection/190727/1600x900') no-repeat center center/cover;
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            top: 0;
+            left: 0;
+            opacity: 0.3;
+        }
+        .navigation{
+            font-family: 'Source Code Pro', monospace;
+            font-size: 20px;
+        display: flex;
+       }
+       li{
+        list-style: none;
+        padding: 23px 33px;
+       }
+       section{
+        /* border: 2px solid red; */
+        height: 344px;
+        margin: 3px 230px;
+        font-family: 'Source Code Pro', monospace;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+       }
+       /* section::before{
+        content: "This is new content";
+       } */
+       h1{
+        font-size: 4rem;
+       }
+       p{
+        text-align: center;
+       }
+       
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Services</li>
+                <li class="item">Contact us</li>
+            </ul>
+        </nav>
+    </header>    
+        <section>
+            <h1>Welcome to coding world</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas nesciunt tempora veritatis molestias repudiandae labore, quibusdam hic quae quasi quis unde provident mollitia molestiae officiis tempore minima beatae aspernatur! Suscipit ducimus quaerat officiis dolore.</p>
+        </section>
+    
+</body>
+</html>
